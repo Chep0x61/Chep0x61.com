@@ -1,8 +1,10 @@
 const express = require('express');
-const { PrismaClient } = require('@prisma/client');
-
-const prisma = new PrismaClient();
 const app = express();
+
+const contactRoute = require('./routes/Contact');
+const heroRoute = require('./routes/Hero');
+const languagesRoute = require('./routes/Languages');
+const navbarRoute = require('./routes/Navbar');
 
 app.use(express.json());
 
@@ -13,48 +15,16 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/', (req, res) => {
+app.use("/api/contact", contactRoute);
+app.use("/api/hero", heroRoute);
+app.use("/api/languages", languagesRoute);
+app.use("/api/navbar", navbarRoute);
+
+app.get('/api', (req, res) => {
     try {
         res.status(200).json({ message: 'API is working' });
     } catch (e) {
         res.status(500).json({ message: error.message });
-    }
-});
-
-app.get('/api/languages', async (req, res) => {
-    try {
-        const supportedLanguages = ['en', 'fr'];
-        let lang = req.query.lang;
-
-        if (!lang) {
-            lang = 'en';
-        }
-
-        if (!supportedLanguages.includes(lang)) {
-            return res.status(400).json({ error: 'Unsupported language' });
-        }
-
-        const languages = await prisma.language.findMany({
-            include: {
-                translations: {
-                    where: {
-                        languageCode: lang
-                    }
-                }
-            }
-        });
-
-        const filteredLanguages = languages.map(language => {
-            return {
-                ...language,
-                translations: language.translations.filter(translation => translation.languageCode === lang)
-            };
-        });
-
-        res.json({ languages: filteredLanguages });
-
-    } catch (error) {
-        res.status(500).json({ error: 'Error while getting languages' });
     }
 });
 
