@@ -1,0 +1,18 @@
+model Navbar {
+  id              Int       @id @default(autoincrement())
+  translations   NavbarTranslation[]
+  creationDate DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model NavbarTranslation {
+  id              Int       @id @default(autoincrement())
+  navbarId     Int
+  navbar        Navbar  @relation(fields: [navbarId], references: [id])
+  translationCode String
+  aboutmeBtn String
+  certifsBtn String
+  skillsBtn String
+  projectsBtn String
+  contactBtn String
+}
