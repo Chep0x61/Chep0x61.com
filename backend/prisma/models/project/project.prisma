@@ -1,0 +1,14 @@
+model Project {
+  id              Int       @id @default(autoincrement())
+  image           String
+  translations    ProjectTranslation[]
+  creationDate DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model ProjectTranslation {
+  id              Int       @id @default(autoincrement())
+  projectId      Int
+  project        Project  @relation(fields: [projectId], references: [id])
+  translationCode String
+}
