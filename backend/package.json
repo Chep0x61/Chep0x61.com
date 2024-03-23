@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen": "cat prisma/base.prisma > prisma/schema.prisma && cat prisma/models/*/*.prisma >> prisma/schema.prisma && prisma format prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
