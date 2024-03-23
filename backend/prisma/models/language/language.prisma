@@ -1,6 +1,5 @@
 model Language {
   id           Int       @id @default(autoincrement())
-  image        String
   translations LanguageTranslation[]
   creationDate DateTime  @default(now())
   updatedAt    DateTime  @updatedAt
@@ -10,6 +9,7 @@ model LanguageTranslation {
   id              Int       @id @default(autoincrement())
   languageId      Int
   language        Language  @relation(fields: [languageId], references: [id])
-  languageName    String
+  translationCode String
   languageCode    String
+  languageName    String
 }
