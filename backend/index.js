@@ -5,6 +5,7 @@ const contactRoute = require('./routes/Contact');
 const heroRoute = require('./routes/Hero');
 const languagesRoute = require('./routes/Languages');
 const navbarRoute = require('./routes/Navbar');
+const aboutRoute = require('./routes/About');
 
 app.use(express.json());
 
@@ -19,6 +20,7 @@ app.use("/api/contact", contactRoute);
 app.use("/api/hero", heroRoute);
 app.use("/api/languages", languagesRoute);
 app.use("/api/navbar", navbarRoute);
+app.use("/api/about", aboutRoute);
 
 app.get('/api', (req, res) => {
     try {
