@@ -6,6 +6,10 @@ const heroRoute = require('./routes/Hero');
 const languagesRoute = require('./routes/Languages');
 const navbarRoute = require('./routes/Navbar');
 const aboutRoute = require('./routes/About');
+const educationalRoute = require('./routes/Educational');
+const professionalRoute = require('./routes/Professional');
+const skillsRoute = require('./routes/Skills');
+const certificationsRoute = require('./routes/Certifications');
 
 app.use(express.json());
 
@@ -21,6 +25,10 @@ app.use("/api/hero", heroRoute);
 app.use("/api/languages", languagesRoute);
 app.use("/api/navbar", navbarRoute);
 app.use("/api/about", aboutRoute);
+app.use("/api/educational", educationalRoute);
+app.use("/api/professional", professionalRoute);
+app.use("/api/skills", skillsRoute);
+app.use("/api/certifications", certificationsRoute);
 
 app.get('/api', (req, res) => {
     try {
