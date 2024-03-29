@@ -1,15 +1,19 @@
 model Certification {
-  id              Int       @id @default(autoincrement())
-  translations   CertificationTranslation[]
-  creationDate DateTime  @default(now())
-  updatedAt    DateTime  @updatedAt
+  id            Int       @id @default(autoincrement())
+  translations  CertificationTranslation[]
+  creationDate  DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
 }
 
 model CertificationTranslation {
   id              Int       @id @default(autoincrement())
-  certificationId     Int
-  certification        Certification  @relation(fields: [certificationId], references: [id])
-  languageCode    String
-  title String
-  date String
+  certificationId Int
+  certification   Certification  @relation(fields: [certificationId], references: [id])
+  translationCode String
+  title           String
+  certif1         String[]
+  certif2         String[]
+  certif3         String[]
+  certif4         String[]
+  certif5         String[]
 }
