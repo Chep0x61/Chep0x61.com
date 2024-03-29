@@ -1,14 +1,20 @@
-model ProfessionalPath {
-  id              Int       @id @default(autoincrement())
-  translations   ProfessionalPathTranslation[]
-  creationDate DateTime  @default(now())
-  updatedAt    DateTime  @updatedAt
+model Professional {
+  id            Int       @id @default(autoincrement())
+  translations  ProfessionalTranslation[]
+  creationDate  DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
 }
 
-model ProfessionalPathTranslation {
+model ProfessionalTranslation {
   id              Int       @id @default(autoincrement())
-  professionalPathId     Int
-  professionalPath        ProfessionalPath  @relation(fields: [professionalPathId], references: [id])
+  professionalId  Int
+  professional    Professional  @relation(fields: [professionalId], references: [id])
   translationCode String
-  title String
+  title           String
+  experience1     String[]
+  experience2     String[]
+  experience3     String[]
+  experience4     String[]
+  experience5     String[]
+  experience6     String[]
 }
