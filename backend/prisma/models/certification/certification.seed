@@ -1,0 +1,27 @@
+await prisma.certification.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'Certifications',
+          certif1: ["Mooc ANSSI SecNumacadémie","2023","https://cyber.gouv.fr/le-mooc-secnumacademie"],
+          certif2: ["TryHackMe Web Fundamentals","2023", "https://tryhackme.com/path/outline/web"],
+          certif3: ["CNIL GDPR Workshop","2023","https://www.cnil.fr/fr/comprendre-le-rgpd/le-mooc-de-la-cnil-est-de-retour-dans-une-nouvelle-version-enrichie"],
+          certif4: ["TryHackMe Jr Penetration Tester","2024","https://tryhackme.com/path/outline/jrpenetrationtester"],
+          certif5: ["CISCO Ethical Hacker","2024","https://skillsforall.com/course/ethical-hacker"],
+        },
+        {
+          translationCode: 'fr',
+          title: 'Certifications',
+          certif1: ["Mooc ANSSI SecNumacadémie","2023","https://cyber.gouv.fr/le-mooc-secnumacademie"],
+          certif2: ["TryHackMe Fondamentaux Web","2023", "https://tryhackme.com/path/outline/web"],
+          certif3: ["CNIL L'atelier RGPD","2023","https://www.cnil.fr/fr/comprendre-le-rgpd/le-mooc-de-la-cnil-est-de-retour-dans-une-nouvelle-version-enrichie"],
+          certif4: ["TryHackMe Pentesteur Junior","2024","https://tryhackme.com/path/outline/jrpenetrationtester"],
+          certif5: ["CISCO Hacker Éthique","2024","https://skillsforall.com/course/ethical-hacker"],
+        },
+      ],
+    },
+  },
+})
+
