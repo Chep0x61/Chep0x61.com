@@ -1,6 +1,5 @@
 model Hero {
   id            Int       @id @default(autoincrement())
-  image         String
   translations  HeroTranslation[]
   creationDate  DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
@@ -11,9 +10,7 @@ model HeroTranslation {
   heroId          Int
   hero            Hero  @relation(fields: [heroId], references: [id])
   translationCode String
-  titlePt1        String
-  titlePt2        String
-  titlePt3        String
+  title           String
   sentence1       String
   sentence2       String
   resumeBtn       String
