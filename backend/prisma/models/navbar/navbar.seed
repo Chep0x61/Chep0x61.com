@@ -1,0 +1,25 @@
+await prisma.navbar.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          aboutmeBtn: 'About Me',
+          certifsBtn: 'Certifications',
+          skillsBtn: 'Skills',
+          projectsBtn: 'Projects',
+          contactBtn: 'Contact',
+        },
+        {
+          translationCode: 'fr',
+          aboutmeBtn: 'À propos de moi',
+          certifsBtn: 'Certifications',
+          skillsBtn: 'Compétences',
+          projectsBtn: 'Projets',
+          contactBtn: 'Contact',
+        },
+      ],
+    },
+  },
+})
+
