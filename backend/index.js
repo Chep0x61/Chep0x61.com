@@ -10,6 +10,8 @@ const educationalRoute = require('./routes/Educational');
 const professionalRoute = require('./routes/Professional');
 const skillsRoute = require('./routes/Skills');
 const certificationsRoute = require('./routes/Certifications');
+const projectsRoute = require('./routes/Projects');
+
 
 app.use(express.json());
 
@@ -29,6 +31,7 @@ app.use("/api/educational", educationalRoute);
 app.use("/api/professional", professionalRoute);
 app.use("/api/skills", skillsRoute);
 app.use("/api/certifications", certificationsRoute);
+app.use("/api/projects", projectsRoute);
 
 app.get('/api', (req, res) => {
     try {
