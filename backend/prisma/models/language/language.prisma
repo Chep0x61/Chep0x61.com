@@ -1,6 +1,7 @@
 model Language {
   id           Int       @id @default(autoincrement())
   translations LanguageTranslation[]
+  flag         String
   creationDate DateTime  @default(now())
   updatedAt    DateTime  @updatedAt
 }
