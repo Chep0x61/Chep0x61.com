@@ -1,0 +1,21 @@
+await prisma.contact.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: "Interested ? Let's get in touch !",
+          sentence1: 'If you appreciate my work, my experience or if you have any other requests, feel free to reach out and contact me.',
+          button: 'Drop me a line !',
+        },
+        {
+          translationCode: 'fr',
+          title: 'Intéressé ? Contactez-moi !',
+          sentence1: "Si vous appréciez mon travail, mon expérience ou si vous avez d'autres demandes, n'hésitez pas à me contacter.",
+          button: 'Faites-moi signe !',
+        },
+      ],
+    },
+  },
+})
+
