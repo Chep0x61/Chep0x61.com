@@ -1,0 +1,29 @@
+await prisma.professional.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'Professional Experience',
+          experience1: ["TOTAL","Donges Refinery","1 month","2017","Information Technology and Networks Department.","/icons/companies/total.png","https://totalenergies.com"],
+          experience2: ["123 DEPAN.NET","Redon","1 month","2017","Customer service, client follow-up, and hardware and software repairs at a computer maintenance shop."],
+          experience3: ["CMI","Montesson","1 month","2018","Customer service, client follow-up, and hardware and software repairs at a computer maintenance shop.","/icons/companies/cmi.png","https://cybermaintenance.fr"],
+          experience4: ["VIVACTION","Suresnes","1 month","2018","Technical Support Department at the Telecom Operator.","/icons/companies/vivaction.png","https://www.linkedin.com/company/vivaction"],
+          experience5: ["LEXISTEMS","fully remote","6 months","2020","Learned Cython library for Python to optimize certain code and initiated the development of an application in React Native.","/icons/companies/lexistems.png","https://lexistems.com"],
+          experience6: ["UNIVOICE","fully remote","4 months","2023","Designing a new interface with Vue, enabling external translators to the company to register and work on an internal project.","/icons/companies/univoice.png","https://www.univoice.fr"],
+        },
+        {
+          translationCode: 'fr',
+          title: 'Expériences Professionnelles',
+          experience1: ["TOTAL","Raffinerie de Donges","1 mois","2017","Service informatique et Reseaux.","/icons/companies/total.png","https://totalenergies.com"],
+          experience2: ["123 DEPAN.NET","Redon","1 mois","2017","Accueil, suivi client et réparations matérielles et logicielles dans un atelier de maintenance informatique."],
+          experience3: ["CMI","Montesson","1 mois","2018","Accueil, suivi client et réparations matérielles et logicielles dans un atelier de maintenance informatique.","/icons/companies/cmi.png","https://cybermaintenance.fr"],
+          experience4: ["VIVACTION","Suresnes","1 mois","2018","Service de support technique chez l'opérateur Télécom.","/icons/companies/vivaction.png","https://www.linkedin.com/company/vivaction"],
+          experience5: ["LEXISTEMS","distanciel complet","6 mois","2020","Apprentissage de la bibliothèque Cython pour Python dans le but d'optimiser certains codes. Début de création d'une application en React Native.","/icons/companies/lexistems.png","https://lexistems.com"],
+          experience6: ["UNIVOICE","distanciel complet","4 mois","2023","Conception d'une nouvelle interface avec Vue, permettant a des traducteurs externes a l’entreprise de se déclarer et travailler sur un projet interne.","/icons/companies/univoice.png","https://www.univoice.fr"],
+        },
+      ],
+    },
+  },
+})
+
