@@ -1,0 +1,40 @@
+await prisma.language.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          languageCode: 'en',
+          languageName: 'English'
+        },
+        {
+          translationCode: 'fr',
+          languageCode: 'en',
+          languageName: 'Anglais'
+        },
+      ],
+    },
+    flag: '/icons/flags/uk.png',
+  },
+})
+
+await prisma.language.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          languageCode: 'fr',
+          languageName: 'French'
+       },
+       {
+          translationCode: 'fr',
+          languageCode: 'fr',
+          languageName: 'Français'
+       },
+      ],
+    },
+    flag: '/icons/flags/fr.png',
+  },
+})
+
