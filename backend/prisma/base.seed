@@ -1,0 +1,25 @@
+const { PrismaClient } = require('@prisma/client')
+const prisma = new PrismaClient()
+
+async function main() {
+    await prisma.AboutMeTranslation.deleteMany();
+    await prisma.AboutMe.deleteMany();
+    await prisma.NavbarTranslation.deleteMany();
+    await prisma.Navbar.deleteMany();
+    await prisma.LanguageTranslation.deleteMany();
+    await prisma.Language.deleteMany();
+    await prisma.HeroTranslation.deleteMany();
+    await prisma.Hero.deleteMany();
+    await prisma.EducationalTranslation.deleteMany();
+    await prisma.Educational.deleteMany();
+    await prisma.ContactTranslation.deleteMany();
+    await prisma.Contact.deleteMany();
+    await prisma.CertificationTranslation.deleteMany();
+    await prisma.Certification.deleteMany();
+    await prisma.ProfessionalTranslation.deleteMany();
+    await prisma.Professional.deleteMany();
+    await prisma.ProjectTranslation.deleteMany();
+    await prisma.Project.deleteMany();
+    await prisma.SkillTranslation.deleteMany();
+    await prisma.Skill.deleteMany();
+
