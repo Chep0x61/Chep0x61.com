@@ -1,0 +1,23 @@
+await prisma.AboutMe.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'About Me',
+          sentence1: "To wrap up my academic journey at Epitech, I'm currently seeking a part-time position in Cybersecurity, three days a week, starting from September 2024.",
+          sentence2: "The skills acquired throughout my various experiences in development have enriched my understanding of Cybersecurity and its challenges.",
+          sentence3: "Interested to explore new experiences in the field of Cybersecurity and its challenges, I'm ready to adapt eagerly to the tasks entrusted to me."
+        },
+        {
+          translationCode: 'fr',
+          title: 'À propos de moi',
+          sentence1: "Afin de conclure mon parcours scolaire à Epitech, je suis à la recherche d'un poste à temps partiel en Cybersécurité, trois jours par semaine, à partir de septembre 2024.",
+          sentence2: "Les compétences acquises au cours de mes différentes expériences en développement ont enrichi ma compréhension de la Cybersécurité et de ses défis.",
+          sentence3: "Intéressé d'explorer de nouvelles expériences dans le domaine de la Cybersécurité et ses enjeux, je suis prêt à m'adapter avec enthousiasme aux tâches qui me seront confiées."
+        },
+      ],
+    },
+  },
+})
+
