@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:20.12.0-alpine3.19
 
 WORKDIR /app
 
@@ -10,12 +10,10 @@ COPY prisma ./prisma
 
 RUN npm run gen
 
-COPY prisma ./prisma
-
-RUN npx prisma generate
+RUN npm run db
 
 COPY . .
 
 EXPOSE 4000
 
-CMD ["node", "index.js"]
+CMD npx prisma generate && npx prisma db seed && node index.js
