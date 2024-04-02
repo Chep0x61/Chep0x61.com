@@ -12,11 +12,10 @@ const skillsRoute = require('./routes/Skills');
 const certificationsRoute = require('./routes/Certifications');
 const projectsRoute = require('./routes/Projects');
 
-
 app.use(express.json());
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Origin', 'www.chep0x61.com,chep0x61.com');
     res.setHeader('Access-Control-Allow-Methods','GET');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     next();
