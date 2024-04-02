@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gen": "cat prisma/base.prisma > prisma/schema.prisma && cat prisma/models/*/*.prisma >> prisma/schema.prisma && prisma format prisma/schema.prisma"
+    "gen": "cat prisma/base.prisma > prisma/schema.prisma && cat prisma/models/*/*.prisma >> prisma/schema.prisma && prisma format prisma/schema.prisma",
+    "db": "cat prisma/base.seed > prisma/seed.js && cat prisma/models/*/*.seed >> prisma/seed.js && cat prisma/end.seed >> prisma/seed.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "keywords": [],
   "author": "",
