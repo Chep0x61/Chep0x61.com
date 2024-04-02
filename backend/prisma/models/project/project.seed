@@ -1,0 +1,282 @@
+await prisma.project.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'My Projects',
+          sentence1: 'Explore the selected tech stack for each of my projects by clicking the toolbox.',
+          name: 'EIP - Archo',
+          description: 'Ongoing three-year project developing a SaaS solution for real estate agencies, with a globally distributed team for one year.',
+          href: 'https://archo.fr',
+          stack: 'Tech Stack',
+          categories: ['Frontend', 'Backend', 'Deployment'],
+          stackCategories: ['Frontend', 'Backend', 'Deployment', 'Development'],
+          frontend: ['next', 'typescript', 'tailwind'],
+          frontendLinks: ['https://nextjs.org', 'https://www.typescriptlang.org', 'https://tailwindcss.com'],
+          backend: ['laravel', 'mysql'],
+          backendLinks: ['https://laravel.com', 'https://www.mysql.com'],
+          deployment: ['docker', 'vercel'],
+          deploymentLinks: ['https://www.docker.com', 'https://vercel.com'],
+          development: [],
+          developmentLinks: []
+        },
+        {
+          translationCode: 'fr',
+          title: 'Mes Projets',
+          sentence1: 'Explorez les technologies utilisées pour chacun de mes projets en cliquant sur la boîte à outils.',
+          name: 'EIP - Archo',
+          description: "Projet en cours de trois ans visant à développer un SaaS pour les agences immobilières, avec une équipe répartie à l'échelle mondiale depuis un an.",
+          href: 'https://archo.fr',
+          stack: 'Technos Utilisées',
+          categories: ['Frontend', 'Backend', 'Déploiement'],
+          stackCategories: ['Frontend', 'Backend', 'Déploiement', 'Développement'],
+          frontend: ['next', 'typescript', 'tailwind'],
+          frontendLinks: ['https://nextjs.org', 'https://www.typescriptlang.org', 'https://tailwindcss.com'],
+          backend: ['laravel', 'mysql'],
+          backendLinks: ['https://laravel.com', 'https://www.mysql.com'],
+          deployment: ['docker', 'vercel'],
+          deploymentLinks: ['https://www.docker.com', 'https://vercel.com'],
+          development: [],
+          developmentLinks: []
+        },
+      ],
+    },
+  },
+})
+
+await prisma.project.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'My Projects',
+          sentence1: 'Explore the selected tech stack for each of my projects by clicking the toolbox.',
+          name: 'Portfolio',
+          description: 'My own website made by myself, to gather all information about me.',
+          href: 'https://github.com/Chep0x61/Chep0x61.com',
+          stack: 'Tech Stack',
+          categories: ['Frontend', 'Backend', 'Deployment'],
+          stackCategories: ['Frontend', 'Backend', 'Deployment', 'Development'],
+          frontend: ['next', 'typescript', 'tailwind'],
+          frontendLinks: ['https://nextjs.org', 'https://www.typescriptlang.org', 'https://tailwindcss.com'],
+          backend: ['express', 'javascript', 'prisma', 'postgresql'],
+          backendLinks: ['https://expressjs.com', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', 'https://www.prisma.io', 'https://www.postgresql.org'],
+          deployment: ['docker', 'aws'],
+          deploymentLinks: ['https://www.docker.com', 'https://aws.amazon.com'],
+          development: [],
+          developmentLinks: []
+        },
+        {
+          translationCode: 'fr',
+          title: 'Mes Projets',
+          sentence1: 'Explorez les technologies utilisées pour chacun de mes projets en cliquant sur la boîte à outils.',
+          name: 'Portfolio',
+          description: 'Mon propre site internet réalisé par mes soins, afin de regrouper toutes les informations à mon sujet.',
+          href: 'https://github.com/Chep0x61/Chep0x61.com',
+          stack: 'Technos Utilisées',
+          categories: ['Frontend', 'Backend', 'Déploiement'],
+          stackCategories: ['Frontend', 'Backend', 'Déploiement', 'Développement'],
+          frontend: ['next', 'typescript', 'tailwind'],
+          frontendLinks: ['https://nextjs.org', 'https://www.typescriptlang.org', 'https://tailwindcss.com'],
+          backend: ['express',  'javascript', 'prisma', 'postgresql'],
+          backendLinks: ['https://expressjs.com', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', 'https://www.prisma.io', 'https://www.postgresql.org'],
+          deployment: ['docker', 'aws'],
+          deploymentLinks: ['https://www.docker.com', 'https://aws.amazon.com'],
+          development: [],
+          developmentLinks: []
+        },
+      ],
+    },
+  },
+})
+
+await prisma.project.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'My Projects',
+          sentence1: 'Explore the selected tech stack for each of my projects by clicking the toolbox.',
+          name: 'R-Type',
+          description: 'Reproduction of the game R-Type through a network-focused project to incorporate a multiplayer mode as well as Windows and Linux cross-platform compatibility.',
+          href: 'https://github.com/Chep0x61/R-Type',
+          stack: 'Tech Stack',
+          categories: ['Video Game', 'Cross Plateform'],
+          stackCategories: ['Frontend', 'Backend', 'Deployment', 'Development'],
+          frontend: [],
+          frontendLinks: [],
+          backend: [],
+          backendLinks: [],
+          deployment: [],
+          deploymentLinks: [],
+          development: ['cmasmas', 'sfml'],
+          developmentLinks: ['https://cplusplus.com', 'https://www.sfml-dev.org/index.php']
+        },
+        {
+          translationCode: 'fr',
+          title: 'Mes Projets',
+          sentence1: 'Explorez les technologies utilisées pour chacun de mes projets en cliquant sur la boîte à outils.',
+          name: 'R-Type',
+          description: 'Reproduction du jeu R-Type à travers un projet axé sur le réseau pour inclure un mode multijoueur ainsi que la compatibilité multiplateforme Windows et Linux.',
+          href: 'https://github.com/Chep0x61/R-Type',
+          stack: 'Technos Utilisées',
+          categories: ['Jeu Vidéo', 'MultiPlateforme'],
+          stackCategories: ['Frontend', 'Backend', 'Déploiement', 'Développement'],
+          frontend: [],
+          frontendLinks: [],
+          backend: [],
+          backendLinks: [],
+          deployment: [],
+          deploymentLinks: [],
+          development: ['cmasmas', 'sfml'],
+          developmentLinks: ['https://cplusplus.com', 'https://www.sfml-dev.org/index.php']
+        },
+      ],
+    },
+  },
+})
+
+await prisma.project.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'My Projects',
+          sentence1: 'Explore the selected tech stack for each of my projects by clicking the toolbox.',
+          name: 'Mini Lib C',
+          description: 'Recreating multiple functions from the Standard C Library directly in Assembly language.',
+          href: 'https://github.com/Chep0x61/ASM_MiniLibC',
+          stack: 'Tech Stack',
+          categories: ['Assembly'],
+          stackCategories: ['Frontend', 'Backend', 'Deployment', 'Development'],
+          frontend: [],
+          frontendLinks: [],
+          backend: [],
+          backendLinks: [],
+          deployment: [],
+          deploymentLinks: [],
+          development: ['asm'],
+          developmentLinks: ['https://en.wikipedia.org/wiki/X86_assembly_language']
+        },
+        {
+          translationCode: 'fr',
+          title: 'Mes Projets',
+          sentence1: 'Explorez les technologies utilisées pour chacun de mes projets en cliquant sur la boîte à outils.',
+          name: 'Mini Lib C',
+          description: 'Réalisation de plusieurs fonctions de la bibliothèque C standard directement en Assembleur.',
+          href: 'https://github.com/Chep0x61/ASM_MiniLibC',
+          stack: 'Technos Utilisées',
+          categories: ['Assembleur'],
+          stackCategories: ['Frontend', 'Backend', 'Déploiement', 'Développement'],
+          frontend: [],
+          frontendLinks: [],
+          backend: [],
+          backendLinks: [],
+          deployment: [],
+          deploymentLinks: [],
+          development: ['asm'],
+          developmentLinks: ['https://en.wikipedia.org/wiki/X86_assembly_language']
+        },
+      ],
+    },
+  },
+})
+
+await prisma.project.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'My Projects',
+          sentence1: 'Explore the selected tech stack for each of my projects by clicking the toolbox.',
+          name: 'Discord Bot',
+          description: 'Development of a versatile Discord Bot: displaying memes via the Reddit API, creating teams for in-game battles, and a few other features.',
+          href: 'https://github.com/Chep0x61/FruitfulBot',
+          stack: 'Tech Stack',
+          categories: ['Bot'],
+          stackCategories: ['Frontend', 'Backend', 'Deployment', 'Development'],
+          frontend: [],
+          frontendLinks: [],
+          backend: [],
+          backendLinks: [],
+          deployment: ['docker'],
+          deploymentLinks: ['https://www.docker.com'],
+          development: ['python'],
+          developmentLinks: ['https://www.python.org/']
+        },
+        {
+          translationCode: 'fr',
+          title: 'Mes Projets',
+          sentence1: 'Explorez les technologies utilisées pour chacun de mes projets en cliquant sur la boîte à outils.',
+          name: 'Bot Discord',
+          description: "Conception d'un Bot Discord polyvalent : affichage de memes via l'API Reddit, création d'équipes pour des affrontements en jeu, et quelques autres fonctionnalités.",
+          href: 'https://github.com/Chep0x61/FruitfulBot',
+          stack: 'Technos Utilisées',
+          categories: ['Bot'],
+          stackCategories: ['Frontend', 'Backend', 'Déploiement', 'Développement'],
+          frontend: [],
+          frontendLinks: [],
+          backend: [],
+          backendLinks: [],
+          deployment: ['docker'],
+          deploymentLinks: ['https://www.docker.com'],
+          development: ['python'],
+          developmentLinks: ['https://www.python.org/']
+        },
+      ],
+    },
+  },
+})
+
+await prisma.project.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'My Projects',
+          sentence1: 'Explore the selected tech stack for each of my projects by clicking the toolbox.',
+          name: 'FulmoFilms',
+          description: 'Designed a portfolio for a client working in cinema and photography. From shared UI/UX brainstorming with him, to the implementation of my ideas.',
+          href: 'https://fulmofilms.com',
+          stack: 'Tech Stack',
+          categories: ['Frontend', 'Deployment'],
+          stackCategories: ['Frontend', 'Backend', 'Deployment', 'Development'],
+          frontend: ['react', 'javascript', 'tailwind'],
+          frontendLinks: ['https://react.dev', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', 'https://tailwindcss.com'],
+          backend: [],
+          backendLinks: [],
+          deployment: ['github', 'gha'],
+          deploymentLinks: ['https://github.com', 'https://github.com/features/actions'],
+          development: [],
+          developmentLinks: []
+        },
+        {
+          translationCode: 'fr',
+          title: 'Mes Projets',
+          sentence1: 'Explorez les technologies utilisées pour chacun de mes projets en cliquant sur la boîte à outils.',
+          name: 'FulmoFilms',
+          description: "Conception d'un portfolio pour un client travaillant dans le cinéma et la photographie. De la réflexion sur l'UI/UX partagée avec lui, jusqu'à la mise en œuvre de mes idées.",
+          href: 'https://fulmofilms.com',
+          stack: 'Technos Utilisées',
+          categories: ['Frontend', 'Déploiement'],
+          stackCategories: ['Frontend', 'Backend', 'Déploiement', 'Développement'],
+          frontend: ['react', 'javascript', 'tailwind'],
+          frontendLinks: ['https://react.dev', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', 'https://tailwindcss.com'],
+          backend: [],
+          backendLinks: [],
+          deployment: ['github', 'gha'],
+          deploymentLinks: ['https://github.com', 'https://github.com/features/actions'],
+          development: [],
+          developmentLinks: []
+        },
+      ],
+    },
+  },
+})
+
