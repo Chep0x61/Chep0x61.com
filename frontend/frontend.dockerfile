@@ -1,4 +1,6 @@
-FROM node:20-alpine
+FROM node:20.12.0-alpine3.19 AS builder
+
+ARG NEXT_PUBLIC_BACKEND_URL
 
 WORKDIR /app
 
@@ -12,4 +14,9 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["pnpm", "run", "dev"]
+RUN pnpm run build
+
+FROM nginx:1.25.4-alpine AS runner
+
+COPY --from=builder /app/build /usr/share/nginx/html
+COPY config/nginx.conf /etc/nginx/conf.d/default.conf
