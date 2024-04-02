@@ -1,0 +1,31 @@
+await prisma.skill.create({
+  data: {
+    translations: {
+      create: [
+        {
+          translationCode: 'en',
+          title: 'My Skills',
+          soft: 'Soft Skills',
+          skills: ["Conscientious","Open-minded","Team Player","Sociable","Hard Worker"],
+          dev: 'Development',
+          deploy: 'Deployment',
+          os: 'Operating Systems',
+          front: 'Frontend',
+          back: 'Backend',
+        },
+        {
+          translationCode: 'fr',
+          title: 'Mes Compétences',
+          soft: 'Aptitudes personnelles',
+          skills: ["Consciencieux","Ouvert d'esprit","Esprit d'équipe","Sociable","Passionné investi"],
+          dev: 'Développement',
+          deploy: 'Déploiement',
+          os: "Systèmes d'exploitation",
+          front: 'Frontend',
+          back: 'Backend',
+        },
+      ],
+    },
+  },
+})
+
