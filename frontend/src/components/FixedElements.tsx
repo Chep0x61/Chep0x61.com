@@ -3,7 +3,7 @@ import FixedNavbar from "./FixedNavbar";
 
 const FixedElements = () => {
     return (
-        <div className="">
+        <div>
             <FixedSocials />
             <FixedNavbar />
         </div>
