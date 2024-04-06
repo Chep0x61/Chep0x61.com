@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/hooks/useLanguage";
+import { useUrl } from "@/hooks/useUrl";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import VerticalSteps from "@/components/VerticalSteps";
@@ -26,7 +27,7 @@ const Professional = () => {
     const [professional, setProfessional] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/professional?lang=${currentLanguage}`)
+        axios.get(`${useUrl}/api/professional?lang=${currentLanguage}`)
             .then(response => {
                 const professionalTranslations = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,
