@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/hooks/useLanguage";
+import { useUrl } from "@/hooks/useUrl";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -64,7 +65,7 @@ const Skills = () => {
     const [skills, setSkills] = useState<Content[]>([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/skills?lang=${currentLanguage}`)
+        axios.get(`${useUrl}/skills?lang=${currentLanguage}`)
             .then(response => {
                 const skillsTranslations = response.data.languages.map((content: any) => {
                     const softarr = typeof content.translations[0].skills === 'string' ? content.translations[0].skills.split(',') : content.translations[0].skills;
