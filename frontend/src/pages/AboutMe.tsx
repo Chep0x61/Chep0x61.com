@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/hooks/useLanguage";
+import { useUrl } from "@/hooks/useUrl";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -16,7 +17,7 @@ const AboutMe = () => {
     const [about, setAbout] = useState<Content[]>([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/about?lang=${currentLanguage}`)
+        axios.get(`${useUrl}/api/about?lang=${currentLanguage}`)
             .then(response => {
                 const aboutTranslations = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,
