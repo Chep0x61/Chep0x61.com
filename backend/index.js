@@ -21,18 +21,18 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use("/api/contact", contactRoute);
-app.use("/api/hero", heroRoute);
-app.use("/api/languages", languagesRoute);
-app.use("/api/navbar", navbarRoute);
-app.use("/api/about", aboutRoute);
-app.use("/api/educational", educationalRoute);
-app.use("/api/professional", professionalRoute);
-app.use("/api/skills", skillsRoute);
-app.use("/api/certifications", certificationsRoute);
-app.use("/api/projects", projectsRoute);
+app.use("/contact", contactRoute);
+app.use("/hero", heroRoute);
+app.use("/languages", languagesRoute);
+app.use("/navbar", navbarRoute);
+app.use("/about", aboutRoute);
+app.use("/educational", educationalRoute);
+app.use("/professional", professionalRoute);
+app.use("/skills", skillsRoute);
+app.use("/certifications", certificationsRoute);
+app.use("/projects", projectsRoute);
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     try {
         res.status(200).json({ message: 'API is working' });
     } catch (e) {
