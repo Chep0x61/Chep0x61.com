@@ -3,6 +3,7 @@
 import RotatingTextCircle from "@/components/RotatingCircle";
 import RainbowButton from "@/components/RainbowButton";
 import { useLanguage } from "@/hooks/useLanguage";
+import { useUrl } from "@/hooks/useUrl";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -20,7 +21,7 @@ const Hero = () => {
     const path = currentLanguage === "fr" ? "/documents/cv_thibault_thuillier.pdf" : "/documents/resume_thibault_thuillier.pdf";
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/hero?lang=${currentLanguage}`)
+        axios.get(`${useUrl}/api/hero?lang=${currentLanguage}`)
             .then(response => {
                 const heroTranslations: HeroContent[] = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,
