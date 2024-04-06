@@ -6,6 +6,7 @@ import Mail from "@/components/icons/Mail";
 import RainbowButton from "@/components/RainbowButton";
 
 import { useLanguage } from "@/hooks/useLanguage";
+import { useUrl } from "@/hooks/useUrl";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -20,7 +21,7 @@ const Contact = () => {
     const [contact, setContact] = useState<Content[]>([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/contact?lang=${currentLanguage}`)
+        axios.get(`${useUrl}/api/contact?lang=${currentLanguage}`)
             .then(response => {
                 const contactTranslations: Content[] = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,
