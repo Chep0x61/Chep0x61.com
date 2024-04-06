@@ -12,11 +12,9 @@ RUN pnpm i
 
 COPY . .
 
-EXPOSE 3000
-
 RUN pnpm run build
 
 FROM nginx:1.25.4-alpine AS runner
 
 COPY --from=builder /app/.next /usr/share/nginx/html
-COPY config/nginx.conf /etc/nginx/conf.d/default.conf
+COPY config/nginx.conf /etc/nginx/nginx.conf
