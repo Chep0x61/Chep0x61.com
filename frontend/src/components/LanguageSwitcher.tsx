@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 
 import Languages from "@/components/icons/Languages";
+import { useUrl } from "@/hooks/useUrl";
 import { useLanguage } from '../hooks/useLanguage';
 
 interface LanguageData {
@@ -37,7 +38,7 @@ export function LanguageSwitcher() {
     };
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/languages?lang=${currentLanguage}`)
+        axios.get(`${useUrl}/api/languages?lang=${currentLanguage}`)
             .then(response => {
                 const languagesWithCodes = response.data.languages.map((lang: LanguageData) => ({
                     id: lang.id,
