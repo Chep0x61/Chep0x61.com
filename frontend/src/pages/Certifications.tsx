@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/hooks/useLanguage";
+import { useUrl } from "@/hooks/useUrl";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -20,7 +21,7 @@ const Certifications = () => {
     const [certifications, setCertifications] = useState<Content[]>([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/certifications?lang=${currentLanguage}`)
+        axios.get(`${useUrl}/certifications?lang=${currentLanguage}`)
             .then(response => {
                 const certificationsData: Content[] = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,
