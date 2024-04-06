@@ -12,8 +12,10 @@ RUN npm run gen
 
 RUN npm run db
 
+RUN npx prisma generate
+
 COPY . .
 
 EXPOSE 4000
 
-CMD npx prisma generate && npx prisma db seed && node index.js
+CMD npx prisma db push && npx prisma db seed && node index.js
