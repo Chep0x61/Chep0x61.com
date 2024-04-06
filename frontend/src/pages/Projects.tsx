@@ -3,6 +3,7 @@
 import ProjectCard from "@/components/ProjectCard";
 
 import { useLanguage } from "@/hooks/useLanguage";
+import { useUrl } from "@/hooks/useUrl";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -38,7 +39,7 @@ const Projects = () => {
     const [projects, setProjects] = useState<Content[]>([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/projects?lang=${currentLanguage}`)
+        axios.get(`${useUrl}/api/projects?lang=${currentLanguage}`)
             .then(response => {
                 const projectsTranslations: Content[] = response.data.languages.map((language: any) => ({
                     title: language.translations[0].title,
