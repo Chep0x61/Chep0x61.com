@@ -4,7 +4,8 @@ import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { useLanguage } from '../hooks/useLanguage';
+import { useLanguage } from '@/hooks/useLanguage';
+import { useUrl } from "@/hooks/useUrl";
 import axios from "axios";
 
 const FixedNavbar = () => {
@@ -41,7 +42,7 @@ const FixedNavbar = () => {
     };
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/api/navbar?lang=${currentLanguage}`)
+        axios.get(`${useUrl}/api/navbar?lang=${currentLanguage}`)
             .then(response => {
                 const navbarTranslations = response.data.languages.map((content:any) => ({
                     aboutmeBtn: content.translations[0].aboutmeBtn,
