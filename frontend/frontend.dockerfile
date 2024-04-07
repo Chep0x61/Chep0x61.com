@@ -16,5 +16,5 @@ RUN pnpm run build
 
 FROM nginx:1.25.4-alpine AS runner
 
-COPY --from=builder /app/.next /usr/share/nginx/html
-COPY config/nginx.conf /etc/nginx/nginx.conf
+COPY --from=builder /app/out /usr/share/nginx/html
+COPY config/nginx.conf /etc/nginx/conf.d/default.conf
