@@ -20,6 +20,7 @@ export function LanguageSwitcher() {
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [languages, setLanguages] = useState<{ id: string; flag: string; code: string; name: string; }[]>([]);
     const currentLanguage = useLanguage();
+    const url = useUrl();
 
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
@@ -38,7 +39,7 @@ export function LanguageSwitcher() {
     };
 
     useEffect(() => {
-        axios.get(`${useUrl}/api/languages?lang=${currentLanguage}`)
+        axios.get(`${url}/languages?lang=${currentLanguage}`)
             .then(response => {
                 const languagesWithCodes = response.data.languages.map((lang: LanguageData) => ({
                     id: lang.id,

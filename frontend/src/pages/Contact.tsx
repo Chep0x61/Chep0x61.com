@@ -17,11 +17,12 @@ interface Content {
 }
 
 const Contact = () => {
+    const url = useUrl();
     const currentLanguage = useLanguage();
     const [contact, setContact] = useState<Content[]>([]);
 
     useEffect(() => {
-        axios.get(`${useUrl}/api/contact?lang=${currentLanguage}`)
+        axios.get(`${url}/contact?lang=${currentLanguage}`)
             .then(response => {
                 const contactTranslations: Content[] = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,

@@ -14,6 +14,7 @@ const FixedNavbar = () => {
     const { theme } = useTheme();
     const [navbar, setNavbar] = useState<{ aboutmeBtn: string, certifsBtn: string, skillsBtn: string, projectsBtn: string, contactBtn: string }[]>([]);
     const currentLanguage = useLanguage();
+    const url = useUrl();
 
     const lightNavbarBackgroundColor = "#e5e5e5";
     const lightProgressBarColor = "#f8f8f8";
@@ -42,7 +43,7 @@ const FixedNavbar = () => {
     };
 
     useEffect(() => {
-        axios.get(`${useUrl}/api/navbar?lang=${currentLanguage}`)
+        axios.get(`${url}/navbar?lang=${currentLanguage}`)
             .then(response => {
                 const navbarTranslations = response.data.languages.map((content:any) => ({
                     aboutmeBtn: content.translations[0].aboutmeBtn,

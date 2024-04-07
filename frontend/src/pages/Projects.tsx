@@ -35,11 +35,12 @@ interface Content {
 }
 
 const Projects = () => {
+    const url = useUrl();
     const currentLanguage = useLanguage();
     const [projects, setProjects] = useState<Content[]>([]);
 
     useEffect(() => {
-        axios.get(`${useUrl}/api/projects?lang=${currentLanguage}`)
+        axios.get(`${url}/projects?lang=${currentLanguage}`)
             .then(response => {
                 const projectsTranslations: Content[] = response.data.languages.map((language: any) => ({
                     title: language.translations[0].title,

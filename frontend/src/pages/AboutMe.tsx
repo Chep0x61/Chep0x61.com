@@ -13,11 +13,12 @@ interface Content {
 }
 
 const AboutMe = () => {
+    const url = useUrl();
     const currentLanguage = useLanguage();
     const [about, setAbout] = useState<Content[]>([]);
 
     useEffect(() => {
-        axios.get(`${useUrl}/api/about?lang=${currentLanguage}`)
+        axios.get(`${url}/about?lang=${currentLanguage}`)
             .then(response => {
                 const aboutTranslations = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,

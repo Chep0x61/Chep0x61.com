@@ -23,11 +23,12 @@ interface Content {
 }
 
 const Educational = () => {
+    const url = useUrl();
     const currentLanguage = useLanguage();
     const [educational, setEducational] = useState<Content[]>([]);
 
     useEffect(() => {
-        axios.get(`${useUrl}/api/educational?lang=${currentLanguage}`)
+        axios.get(`${url}/educational?lang=${currentLanguage}`)
             .then(response => {
                 const educationalTranslations: Content[] = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,

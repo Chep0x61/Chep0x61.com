@@ -1,3 +1,6 @@
-export function useUrl(): string {
-    return (process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:4000/api');
+import { useEffect, useState } from 'react';
+
+export function useUrl() {
+    const [url, setUrl] = useState<string>("/api");
+    return url ;
 }

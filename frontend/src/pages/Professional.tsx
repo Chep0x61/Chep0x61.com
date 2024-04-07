@@ -23,11 +23,12 @@ interface Content {
 }
 
 const Professional = () => {
+    const url = useUrl();
     const currentLanguage = useLanguage();
     const [professional, setProfessional] = useState([]);
 
     useEffect(() => {
-        axios.get(`${useUrl}/api/professional?lang=${currentLanguage}`)
+        axios.get(`${url}/professional?lang=${currentLanguage}`)
             .then(response => {
                 const professionalTranslations = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,

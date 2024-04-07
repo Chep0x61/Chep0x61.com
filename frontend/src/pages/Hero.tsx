@@ -16,12 +16,13 @@ interface HeroContent {
 }
 
 const Hero = () => {
+    const url = useUrl();
     const currentLanguage = useLanguage();
     const [hero, setHero] = useState<HeroContent[]>([]);
     const path = currentLanguage === "fr" ? "/documents/cv_thibault_thuillier.pdf" : "/documents/resume_thibault_thuillier.pdf";
 
     useEffect(() => {
-        axios.get(`${useUrl}/api/hero?lang=${currentLanguage}`)
+        axios.get(`${url}/hero?lang=${currentLanguage}`)
             .then(response => {
                 const heroTranslations: HeroContent[] = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,
