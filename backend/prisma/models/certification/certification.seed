@@ -10,6 +10,7 @@ await prisma.certification.create({
           certif3: ["CNIL GDPR Workshop","2023","https://www.cnil.fr/fr/comprendre-le-rgpd/le-mooc-de-la-cnil-est-de-retour-dans-une-nouvelle-version-enrichie"],
           certif4: ["TryHackMe Jr Penetration Tester","2024","https://tryhackme.com/path/outline/jrpenetrationtester"],
           certif5: ["CISCO Ethical Hacker","2024","https://skillsforall.com/course/ethical-hacker"],
+          certif6: ["ISC2 CC - Certified in Cybersecurity","2024","https://www.isc2.org/certifications/cc"],
         },
         {
           translationCode: 'fr',
@@ -19,6 +20,7 @@ await prisma.certification.create({
           certif3: ["CNIL L'atelier RGPD","2023","https://www.cnil.fr/fr/comprendre-le-rgpd/le-mooc-de-la-cnil-est-de-retour-dans-une-nouvelle-version-enrichie"],
           certif4: ["TryHackMe Pentesteur Junior","2024","https://tryhackme.com/path/outline/jrpenetrationtester"],
           certif5: ["CISCO Hacker Éthique","2024","https://skillsforall.com/course/ethical-hacker"],
+          certif6: ["ISC2 CC - Certifié en Cybersécurité","2024","https://www.isc2.org/certifications/cc"],
         },
       ],
     },
