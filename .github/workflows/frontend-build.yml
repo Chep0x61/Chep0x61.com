@@ -16,10 +16,7 @@ jobs:
         with:
           version: 8
 
-      - name: Switch ourselves into Frontend directory
-        run: cd frontend
-
-      - name: Install dependencies
+      - name: Install depedencies
         run: pnpm install
 
       - name: Try to build

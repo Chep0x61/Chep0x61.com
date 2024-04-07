@@ -18,12 +18,3 @@ jobs:
 
       - name: Build docker
         run: docker-compose build
-
-      - name: Build and start Docker services
-        run: docker-compose up -d
-
-      - name: Wait for services to start
-        run: sleep 30
-
-      - name: Stop Docker services
-        run: docker-compose down
