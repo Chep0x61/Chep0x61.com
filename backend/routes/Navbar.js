@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
         }
 
         if (!supportedLanguages.includes(lang)) {
-            return res.status(400).json({ error: 'Unsupported language' });
+            lang = 'en';
         }
 
         const navbar = await prisma.navbar.findMany({
