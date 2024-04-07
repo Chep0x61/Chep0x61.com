@@ -16,4 +16,5 @@ model CertificationTranslation {
   certif3         String[]
   certif4         String[]
   certif5         String[]
+  certif6         String[]
 }
