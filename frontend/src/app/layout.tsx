@@ -17,6 +17,14 @@ const mangoli = localFont({
 const poppins = localFont({
     src: [
         {
+            path: '../../public/fonts/poppins/poppins-bold.ttf',
+            weight: '700'
+        },
+        {
+            path: '../../public/fonts/poppins/poppins-semibold.ttf',
+            weight: '600'
+        },
+        {
             path: '../../public/fonts/poppins/poppins-regular.ttf',
             weight: '400'
         },
