@@ -1,6 +1,5 @@
 "use client"
 
-import { useTheme } from "next-themes";
 import ArrowDown from "@/components/icons/ArrowDown";
 
 interface RotatingTextCircleProps {
@@ -8,12 +7,9 @@ interface RotatingTextCircleProps {
 }
 
 const RotatingTextCircle: React.FC<RotatingTextCircleProps> = ({ text }) => {
-    const { theme } = useTheme();
-    const backgroundColor = theme === "light" ? "#1a1a1a" : "#f8f8f8";
-
     return (
         <div className="">
-            <svg className="circle-svg" viewBox="0 0 500 500">
+            <svg className="w-[300px] h-[300px]" viewBox="0 0 500 500">
                 <defs>
                     <path
                         d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"
@@ -30,7 +26,7 @@ const RotatingTextCircle: React.FC<RotatingTextCircleProps> = ({ text }) => {
                         />
                     </path>
                 </defs>
-                <text className="circle-text" dy="80" textLength="1250">
+                <text className={`font-poppins tracking-[12px] text-[18px] font-semibold uppercase fill-[#1a1a1a] dark:fill-[#ffffff]`} dy="80" textLength="1250">
                     <textPath className="font-poppins" xlinkHref="#textcircle_top">&nbsp;{text} - </textPath>
                 </text>
                 <g transform="translate(233, 300)">
@@ -39,20 +35,6 @@ const RotatingTextCircle: React.FC<RotatingTextCircleProps> = ({ text }) => {
                     </g>
                 </g>
             </svg>
-            <style jsx>{`
-            .circle-text {
-                font-size: 18px;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 12px;
-                fill: ${backgroundColor};
-            }
-
-            .circle-svg {
-                height: 300px;
-                width: 300px;
-            }
-        `}</style>
         </div>
     );
 };
