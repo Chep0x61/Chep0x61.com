@@ -57,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, titleStack, descriptio
                 </div>
 
 
-                <div className="flex flex-col mt-8">
+                <div className="flex flex-col mt-8 text-sm md:text-base">
                     {description}
                 </div>
 
