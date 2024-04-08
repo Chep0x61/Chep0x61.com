@@ -9,7 +9,7 @@ const Languages = () => {
     const lightColor = "#0f0f0f";
     const darkColor = "#f8f8f8";
 
-    const currentColor = theme === "light" ? lightColor : darkColor;
+    const currentColor = theme === "light" ? "#0f0f0f" : "#f8f8f8";
 
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"

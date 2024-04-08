@@ -88,7 +88,7 @@ const FixedNavbar = () => {
             <div
                 className="h-full bg-gradient-to-r transition-all duration-300"
                 style={{
-                    backgroundImage: `linear-gradient(to right, ${navbarBackgroundColor} ${scrollProgress}%, ${progressBarColor} ${scrollProgress}%)`,
+                    backgroundImage: `linear-gradient(to right, ${theme === "light" ? '#e5e5e5' : "#323232"} ${scrollProgress}%, ${theme === "light" ? '#f8f8f8' : "#1a1a1a"} ${scrollProgress}%)`,
                 }}
             >
                 <div className="flex justify-between items-center h-full md:px-4">
