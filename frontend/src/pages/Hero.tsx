@@ -47,13 +47,13 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="flex flex-col">
-                    <div className="font-mangoli text-3xl md:text-4xl lg:text-6xl text-center md:text-left mx-1 lg:max-w-[720px]">
+                    <div className="font-mangoli text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-center md:text-left mx-1 lg:max-w-[720px]">
                         {hero && hero.length > 0 ? hero[0].title : ""} <span className="line-through">Thibault Thuillier, a.k.a&nbsp;</span> Chep0x61.
                     </div>
                     <div className="flex mt-2 md:mt-2 text-center md:text-left text-base md:text-lg lg:text-xl max-w-[95%] lg:max-w-[640px] mx-auto md:mx-1">
                         {hero && hero.length > 0 ? hero[0].sentence1 : ""}
                     </div>
-                    <div className="flex mt-2 md:mt-4 text-center md:text-left text-base md:text-lg lg:text-xl max-w-[92%] lg:max-w-[640px] mx-auto md:mx-1">
+                    <div className="flex mt-2 md:mt-4 text-center md:text-left hidden md:inline text-base md:text-lg lg:text-xl max-w-[92%] lg:max-w-[640px] mx-auto md:mx-1">
                         {hero && hero.length > 0 ? hero[0].sentence2 : ""}
                     </div>
                     <div className="flex justify-center">
