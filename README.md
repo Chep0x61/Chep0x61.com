@@ -18,7 +18,7 @@
 <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg" alt="postgres" width="40" height="40"/> </a>
 
 ### Deployment
-<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://icon.icepanel.io/Technology/svg/Docker.svg" alt="docker" width="50" height="50"/> </a>
+<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Docker_%28container_engine%29_logo_%28cropped%29.png" alt="docker" width="60" height="40"/> </a>
 <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"> <img src="https://icon.icepanel.io/Technology/png-shadow-512/AWS.png" alt="git" width="40" height="40"/> </a>
 
 ## Setup Project
