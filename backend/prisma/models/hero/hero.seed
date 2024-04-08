@@ -13,7 +13,7 @@ await prisma.hero.create({
         {
           translationCode: 'fr',
           title: "Hey, moi c'est",
-          sentence1: ' Étudiant en 4è année à Epitech, actuellement en échange universitaire à Taipei Tech.',
+          sentence1: ' Étudiant en 4ème année à Epitech, actuellement en échange universitaire à Taipei Tech.',
           sentence2: "Actuellement à la recherche d'un contrat, 3 jours par semaine en Cybersécurité pour conclure mes études.",
           resumeBtn: 'Jetez un œil à mon CV',
           circleSentence: 'Défilez vers le bas pour en découvrir plus sur moi',
