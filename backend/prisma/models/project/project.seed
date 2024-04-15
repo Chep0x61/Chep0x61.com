@@ -26,7 +26,7 @@ await prisma.project.create({
           title: 'Mes Projets',
           sentence1: 'Explorez les technologies utilisées pour chacun de mes projets en cliquant sur la boîte à outils.',
           name: 'EIP - Archo',
-          description: "Projet en cours de trois ans visant à développer un SaaS pour les agences immobilières, avec une équipe répartie à l'échelle mondiale depuis un an.",
+          description: "Projet en cours de trois ans visant à développer un SaaS pour les agences immobilières, avec une équipe répartie dans le monde entier depuis un an.",
           href: 'https://archo.fr',
           stack: 'Technos Utilisées',
           categories: ['Frontend', 'Backend', 'Déploiement'],
