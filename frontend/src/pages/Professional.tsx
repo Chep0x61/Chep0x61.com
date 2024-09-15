@@ -33,6 +33,7 @@ const Professional = () => {
                 const professionalTranslations = response.data.languages.map((content: any) => ({
                     title: content.translations[0].title,
                     experiences: [
+                        content.translations[0].experience7,
                         content.translations[0].experience6,
                         content.translations[0].experience5,
                         content.translations[0].experience4,
