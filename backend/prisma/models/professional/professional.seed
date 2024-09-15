@@ -11,6 +11,7 @@ await prisma.professional.create({
           experience4: ["VIVACTION","Suresnes","1 month","2018","Technical Support Department at the Telecom Operator.","/icons/companies/vivaction.png","https://www.linkedin.com/company/vivaction"],
           experience5: ["LEXISTEMS","fully remote","6 months","2020","Learned Cython library for Python to optimize certain code and initiated the development of an application in React Native.","/icons/companies/lexistems.png","https://lexistems.com"],
           experience6: ["UNIVOICE","fully remote","4 months","2023","Designing a new interface with Vue, enabling external translators to the company to register and work on an internal project.","/icons/companies/univoice.png","https://www.univoice.fr"],
+          experience7: ["STEAMULO","Paris","6 months","2024","Currently working as a DevOps","/icons/companies/steamulo.png","https://steamulo.com/"],
         },
         {
           translationCode: 'fr',
@@ -21,6 +22,7 @@ await prisma.professional.create({
           experience4: ["VIVACTION","Suresnes","1 mois","2018","Service de support technique chez l'opérateur Télécom.","/icons/companies/vivaction.png","https://www.linkedin.com/company/vivaction"],
           experience5: ["LEXISTEMS","distanciel complet","6 mois","2020","Apprentissage de la bibliothèque Cython pour Python dans le but d'optimiser certains codes. Début de création d'une application en React Native.","/icons/companies/lexistems.png","https://lexistems.com"],
           experience6: ["UNIVOICE","distanciel complet","4 mois","2023","Conception d'une nouvelle interface avec Vue, permettant a des traducteurs externes a l’entreprise de se déclarer et travailler sur un projet interne.","/icons/companies/univoice.png","https://www.univoice.fr"],
+          experience7: ["STEAMULO","Paris","6 mois","2024","Je travaille actuellement en tant que DevOps","/icons/companies/steamulo.png","https://steamulo.com/"],
         },
       ],
     },

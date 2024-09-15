@@ -5,16 +5,16 @@ await prisma.AboutMe.create({
         {
           translationCode: 'en',
           title: 'About Me',
-          sentence1: "To wrap up my academic journey at Epitech, I'm currently seeking a part-time position in Cybersecurity, three days a week, starting from September 2024.",
-          sentence2: "The skills acquired throughout my various experiences in development have enriched my understanding of Cybersecurity and its challenges.",
-          sentence3: "Interested to explore new experiences in the field of Cybersecurity and its challenges, I'm ready to adapt eagerly to the tasks entrusted to me."
+          sentence1: "",
+          sentence2: "Cybersecurity and its challenges are fascinating, I am eager to work in this field.",
+          sentence3: "I regularly practice self-study on platforms like TryHackMe and HackTheBox. I am currently working on certifications to further validate my skills."
         },
         {
           translationCode: 'fr',
           title: 'À propos de moi',
-          sentence1: "Afin de conclure mon parcours scolaire à Epitech, je suis à la recherche d'un poste à temps partiel en Cybersécurité, trois jours par semaine, à partir de septembre 2024.",
-          sentence2: "Les compétences acquises au cours de mes différentes expériences en développement ont enrichi ma compréhension de la Cybersécurité et de ses défis.",
-          sentence3: "Intéressé d'explorer de nouvelles expériences dans le domaine de la Cybersécurité et ses enjeux, je suis prêt à m'adapter avec enthousiasme aux tâches qui me seront confiées."
+          sentence1: "",
+          sentence2: "La Cybersécurité et ses enjeux sont passionnants, je souhaite vivement travailler dans ce domaine.",
+          sentence3: "Je pratique régulièrement en autodidacte sur des plateformes telles que TryHackMe et HackTheBox. Actuellement, je suis en train de préparer des certifications pour renforcer la crédibilité de mes compétences."
         },
       ],
     },
