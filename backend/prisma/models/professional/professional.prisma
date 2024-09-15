@@ -17,4 +17,5 @@ model ProfessionalTranslation {
   experience4     String[]
   experience5     String[]
   experience6     String[]
+  experience7     String[]
 }
