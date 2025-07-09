@@ -35,8 +35,8 @@ const easeInOutCubic = (x) =>
 // icon blur pic
 
 const ProfileCardComponent = ({
-    avatarUrl = "https://media.licdn.com/dms/image/v2/D5603AQF1jx6LDjuF3A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714835726153?e=1757548800&v=beta&t=hjchUXXnndHJX5uMfD-ZIkDoYsUpsT4GoRusUhL6STI",
-    iconUrl = "https://chep0x61.com/myself.png",
+  avatarUrl = "mee.png",
+  iconUrl = "https://risibank.fr/cache/medias/0/29/2924/292413/full.png",
   grainUrl = "",
   behindGradient,
   innerGradient,
