@@ -1,41 +1,12 @@
-# Chep0x61.com
+# React + Vite
 
-### My personal portfolio, discover more about me there ➡️ <a href="https://chep0x61.com" target="_blank" rel="noreferrer">Chep0x61.com</a>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<br />
+Currently, two official plugins are available:
 
-## Project Stack
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### Frontend
-<a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://icon.icepanel.io/Technology/png-shadow-512/Next.js.png" alt="nextjs" width="40" height="40"/> </a>
-<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40"/> </a>
-<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg" alt="tailwind" width="40" height="40"/> </a> 
+## Expanding the ESLint configuration
 
-### Backend
-<a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="express" width="40" height="40"/> </a>
-<a href="https://www.javascript.com/" target="_blank" rel="noreferrer"> <img src="https://icon.icepanel.io/Technology/svg/JavaScript.svg" alt="nextjs" width="40" height="40"/> </a>
-<a href="https://www.prisma.io/" target="_blank" rel="noreferrer"> <img src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/287/square_480/prismaHD.png" alt="prisma" width="40" height="40"/> </a>
-<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg" alt="postgres" width="40" height="40"/> </a>
-
-### Deployment
-<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Docker_%28container_engine%29_logo_%28cropped%29.png" alt="docker" width="60" height="40"/> </a>
-<a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"> <img src="https://icon.icepanel.io/Technology/png-shadow-512/AWS.png" alt="git" width="40" height="40"/> </a>
-
-## Setup Project
-
-#### Don't forget to create and setup your own `.env` file based on the `.env.example` file.
-
-```bash
-docker-compose build
-```
-
-```bash
-docker-compose up -d
-```
-
-## Contributors
-
-| [<img src="https://github.com/Chep0x61.png?size=85" width=85><br><sub>Chep0x61</sub>](https://github.com/Chep0x61) | 
-|:------------------------------------------------------------------------------------------------------------------:|
-
-#### Thank you for reading this ReadMe file ! :heart:
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
